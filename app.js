@@ -105,6 +105,14 @@ function escapeHtml(str) {
 
 loadData();
 
+document.addEventListener("visibilitychange", () => {
+  if (document.visibilityState === "visible") loadData();
+});
+
+window.addEventListener("pageshow", (event) => {
+  if (event.persisted) loadData();
+});
+
 // --- Notifiche push (stessa logica dell'iscrizione, riadattata) ---
 
 function urlBase64ToUint8Array(base64String) {
