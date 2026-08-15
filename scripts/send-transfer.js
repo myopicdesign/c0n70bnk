@@ -74,14 +74,19 @@ async function main() {
 
   for (const sub of subscriptions) {
     try {
-      await webpush.sendNotification(
+      const result = await webpush.sendNotification(
         sub,
         JSON.stringify({
           title: "Bonifico a vostro favore",
           body: `${amount}€`,
           tag: "bonifico",
-        })
+        }),
+        {
+          urgency: "high", // chiede al server push di consegnare con priorità massima
+          TTL: 60 * 60 * 6, // scarta la notifica se non consegnata entro 6 ore (evita notifiche "vecchie" in ritardo)
+        }
       );
+      console.log(`Notifica accettata dal server push (status ${result.statusCode}).`);
     } catch (err) {
       console.error(`Invio fallito (status ${err.statusCode || "?"}):`, err.message);
     }
