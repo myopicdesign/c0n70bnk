@@ -1,1 +1,9 @@
-
+{
+  "name": "abbondanza-scripts",
+  "version": "1.0.0",
+  "private": true,
+  "type": "commonjs",
+  "dependencies": {
+    "web-push": "^3.6.7"
+  }
+}
