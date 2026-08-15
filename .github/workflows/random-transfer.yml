@@ -1,1 +1,44 @@
 
+name: Bonifico casuale ogni 3 ore
+
+on:
+  schedule:
+    - cron: "0 */3 * * *"   # ogni 3 ore, in punto (orario UTC)
+  workflow_dispatch: {}      # permette l'avvio manuale per test
+
+permissions:
+  contents: write   # serve per poter fare commit di data/state.json e data/transactions.json
+
+jobs:
+  transfer:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+          cache-dependency-path: scripts/package.json
+
+      - name: Install dependencies
+        working-directory: scripts
+        run: npm install
+
+      - name: Genera bonifico e invia notifica
+        working-directory: scripts
+        env:
+          VAPID_PUBLIC_KEY: ${{ secrets.VAPID_PUBLIC_KEY }}
+          VAPID_PRIVATE_KEY: ${{ secrets.VAPID_PRIVATE_KEY }}
+          VAPID_SUBJECT: ${{ secrets.VAPID_SUBJECT }}
+        run: node send-transfer.js
+
+      - name: Commit saldo e transazioni aggiornati
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/state.json data/transactions.json
+          git diff --quiet --cached || git commit -m "Aggiorna saldo e transazioni [skip ci]"
+          git push
