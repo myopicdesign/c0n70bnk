@@ -1,37 +1,44 @@
 [
   {
+    "id": "tx-1786818765729",
+    "title": "Bonifico a tuo favore di 512€",
+    "timestamp": "2026-08-15T18:32:45.728Z",
+    "amount": 512,
+    "type": "incoming"
+  },
+  {
     "id": "seed-6",
     "title": "Pagamento metro",
     "timestamp": "2026-08-15T08:12:00+02:00",
-    "amount": -2.20,
+    "amount": -2.2,
     "type": "outgoing"
   },
   {
     "id": "seed-5",
     "title": "Spesa Esselunga",
     "timestamp": "2026-08-14T18:45:00+02:00",
-    "amount": -12.00,
+    "amount": -12,
     "type": "outgoing"
   },
   {
     "id": "seed-4",
     "title": "Affitto casa",
     "timestamp": "2026-08-12T09:00:00+02:00",
-    "amount": -900.00,
+    "amount": -900,
     "type": "outgoing"
   },
   {
     "id": "seed-3",
     "title": "Bolletta gas",
     "timestamp": "2026-08-10T14:20:00+02:00",
-    "amount": -143.00,
+    "amount": -143,
     "type": "outgoing"
   },
   {
     "id": "seed-2",
     "title": "Bolletta luce",
     "timestamp": "2026-08-10T14:18:00+02:00",
-    "amount": -143.00,
+    "amount": -143,
     "type": "outgoing"
   }
 ]
