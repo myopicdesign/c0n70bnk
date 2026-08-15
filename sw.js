@@ -7,7 +7,7 @@ self.addEventListener("activate", (event) => {
 });
 
 self.addEventListener("push", (event) => {
-  let data = { title: "Abbondanza", body: "Hai una nuova notifica." };
+  let data = { title: "Abundance", body: "Hai una nuova notifica." };
   try {
     if (event.data) data = event.data.json();
   } catch (e) {
