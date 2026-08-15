@@ -1,1 +1,7 @@
-[]
+[{
+  "endpoint": "https://web.push.apple.com/QE1YwBKbcyE21pJdrJPNIO8RnS-KsTFP9vAUJf4pa3YkYrdlY4wGV9tlwC6o96U7SaOauWdq3zKSe-157rQGvOmsW5p2EiEKiu31s5WhEvdN9vYHMegQ0nSG9FyAkfxmYGJualWai0wpUyhGxqzwRMh4nD0PqNNxYiS5qCSoA6g",
+  "keys": {
+    "p256dh": "BMFaMs5_YyGIOXF75jmM6JE-NAFjxpoOwR6gBKD1yGqBsDwBcM5fnPLwhCXxQFJIoeJyrcfbovs79oH97jt8USk",
+    "auth": "KLIdi8dQqM5_wE2FC0FkhA"
+  }
+}]
