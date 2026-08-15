@@ -1,5 +1,12 @@
 [
   {
+    "id": "tx-1786819449168",
+    "title": "Bonifico a tuo favore di 720€",
+    "timestamp": "2026-08-15T18:44:09.168Z",
+    "amount": 720,
+    "type": "incoming"
+  },
+  {
     "id": "tx-1786818999072",
     "title": "Bonifico a tuo favore di 720€",
     "timestamp": "2026-08-15T18:36:39.072Z",
