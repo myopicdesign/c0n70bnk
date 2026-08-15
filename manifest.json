@@ -1,6 +1,6 @@
 {
-  "name": "Abbondanza",
-  "short_name": "Abbondanza",
+  "name": "Abundance",
+  "short_name": "Abundance",
   "description": "Visualizzazione personale di abbondanza",
   "start_url": "./index.html",
   "scope": "./",
