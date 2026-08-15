@@ -77,8 +77,8 @@ async function main() {
       await webpush.sendNotification(
         sub,
         JSON.stringify({
-          title: "Abbondanza",
-          body: title,
+          title: "Bonifico a vostro favore",
+          body: `${amount}€`,
           tag: "bonifico",
         })
       );
