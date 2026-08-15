@@ -1,5 +1,5 @@
 // IMPORTANTE: sostituisci con la tua VAPID public key (vedi README).
-const VAPID_PUBLIC_KEY = "INCOLLA_QUI_LA_TUA_VAPID_PUBLIC_KEY";
+const VAPID_PUBLIC_KEY = "BFt7aOTZPYBMVqNbVQHFM3GTDtxBd0pCofQqzklCUimssD9xrCTJVqEcofvDDQOjoxTzwd6il5uicCjtju_B6RA";
 
 const balanceEl = document.getElementById("balance");
 const monthDeltaEl = document.getElementById("month-delta");
