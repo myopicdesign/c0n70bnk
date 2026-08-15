@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Abbondanza</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="apple-touch-icon" href="icons/icon-192.png" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="theme-color" content="#0A0E0C" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="phone">
+    <header class="hero">
+      <button class="icon-btn" id="notif-btn" aria-label="Notifiche">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 3a6 6 0 0 0-6 6v4l-2 4h16l-2-4V9a6 6 0 0 0-6-6z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M9.5 20a2.5 2.5 0 0 0 5 0" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+      </button>
+      <div class="hero-label">Saldo totale</div>
+      <div class="balance" id="balance">€ 0</div>
+      <div class="chip" id="month-delta">+€0 questo mese</div>
+    </header>
+
+    <section class="actions">
+      <button class="action">
+        <span class="action-icon">＋</span>
+        <span>Aggiungi</span>
+      </button>
+      <button class="action">
+        <span class="action-icon">↗</span>
+        <span>Invia</span>
+      </button>
+      <button class="action">
+        <span class="action-icon">⋯</span>
+        <span>Altro</span>
+      </button>
+    </section>
+
+    <section class="tx-panel">
+      <div class="tx-header">
+        <h2>Transazioni</h2>
+        <span class="see-all">Vedi tutto</span>
+      </div>
+      <div id="tx-list" class="tx-list">
+        <p class="tx-empty">Caricamento…</p>
+      </div>
+    </section>
+
+    <section id="setup-card" class="card hidden">
+      <h2>Attiva le notifiche</h2>
+      <p>Aggiungi questa pagina alla Home (Safari → Condividi → Aggiungi a Home), poi apri l'app da lì e tocca il pulsante qui sotto.</p>
+      <button id="subscribe-btn">Attiva notifiche</button>
+      <p id="status" class="status"></p>
+      <div id="step-copy" class="hidden">
+        <p>Copia questo blocco in <code>data/subscriptions.json</code> nel repository.</p>
+        <textarea id="sub-json" readonly rows="6"></textarea>
+        <button id="copy-btn">Copia negli appunti</button>
+        <p id="copy-status" class="status"></p>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
