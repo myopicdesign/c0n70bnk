@@ -1,5 +1,12 @@
 [
   {
+    "id": "tx-1787174924901",
+    "title": "Bonifico a tuo favore di 1243€",
+    "timestamp": "2026-08-19T21:28:44.900Z",
+    "amount": 1243,
+    "type": "incoming"
+  },
+  {
     "id": "tx-1787164788203",
     "title": "Bonifico a tuo favore di 254€",
     "timestamp": "2026-08-19T18:39:48.203Z",
@@ -271,12 +278,5 @@
     "timestamp": "2026-08-15T18:32:45.728Z",
     "amount": 512,
     "type": "incoming"
-  },
-  {
-    "id": "seed-6",
-    "title": "Pagamento metro",
-    "timestamp": "2026-08-15T08:12:00+02:00",
-    "amount": -2.2,
-    "type": "outgoing"
   }
 ]
