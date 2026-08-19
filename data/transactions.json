@@ -1,5 +1,12 @@
 [
   {
+    "id": "tx-1787132237455",
+    "title": "Bonifico a tuo favore di 254€",
+    "timestamp": "2026-08-19T09:37:17.454Z",
+    "amount": 254,
+    "type": "incoming"
+  },
+  {
     "id": "tx-1787122223067",
     "title": "Bonifico a tuo favore di 323€",
     "timestamp": "2026-08-19T06:50:23.066Z",
@@ -269,13 +276,6 @@
     "id": "seed-3",
     "title": "Bolletta gas",
     "timestamp": "2026-08-10T14:20:00+02:00",
-    "amount": -143,
-    "type": "outgoing"
-  },
-  {
-    "id": "seed-2",
-    "title": "Bolletta luce",
-    "timestamp": "2026-08-10T14:18:00+02:00",
     "amount": -143,
     "type": "outgoing"
   }
