@@ -1,5 +1,12 @@
 [
   {
+    "id": "tx-1787164788203",
+    "title": "Bonifico a tuo favore di 254€",
+    "timestamp": "2026-08-19T18:39:48.203Z",
+    "amount": 254,
+    "type": "incoming"
+  },
+  {
     "id": "tx-1787153686417",
     "title": "Bonifico a tuo favore di 126€",
     "timestamp": "2026-08-19T15:34:46.416Z",
@@ -270,13 +277,6 @@
     "title": "Pagamento metro",
     "timestamp": "2026-08-15T08:12:00+02:00",
     "amount": -2.2,
-    "type": "outgoing"
-  },
-  {
-    "id": "seed-5",
-    "title": "Spesa Esselunga",
-    "timestamp": "2026-08-14T18:45:00+02:00",
-    "amount": -12,
     "type": "outgoing"
   }
 ]
