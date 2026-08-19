@@ -1,5 +1,12 @@
 [
   {
+    "id": "tx-1787153686417",
+    "title": "Bonifico a tuo favore di 126€",
+    "timestamp": "2026-08-19T15:34:46.416Z",
+    "amount": 126,
+    "type": "incoming"
+  },
+  {
     "id": "tx-1787144038380",
     "title": "Bonifico a tuo favore di 512€",
     "timestamp": "2026-08-19T12:53:58.380Z",
@@ -270,13 +277,6 @@
     "title": "Spesa Esselunga",
     "timestamp": "2026-08-14T18:45:00+02:00",
     "amount": -12,
-    "type": "outgoing"
-  },
-  {
-    "id": "seed-4",
-    "title": "Affitto casa",
-    "timestamp": "2026-08-12T09:00:00+02:00",
-    "amount": -900,
     "type": "outgoing"
   }
 ]
