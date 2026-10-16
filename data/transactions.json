@@ -1,5 +1,12 @@
 [
   {
+    "id": "tx-1792167620474",
+    "title": "Bonifico a tuo favore di 254€",
+    "timestamp": "2026-10-16T16:20:20.473Z",
+    "amount": 254,
+    "type": "incoming"
+  },
+  {
     "id": "tx-1792148428554",
     "title": "Bonifico a tuo favore di 126€",
     "timestamp": "2026-10-16T11:00:28.554Z",
@@ -269,13 +276,6 @@
     "id": "tx-1791157944271",
     "title": "Bonifico a tuo favore di 512€",
     "timestamp": "2026-10-04T23:52:24.271Z",
-    "amount": 512,
-    "type": "incoming"
-  },
-  {
-    "id": "tx-1791138824184",
-    "title": "Bonifico a tuo favore di 512€",
-    "timestamp": "2026-10-04T18:33:44.183Z",
     "amount": 512,
     "type": "incoming"
   }
